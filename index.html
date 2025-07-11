@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Dropping Number Blocks Game</title>
+    <link rel="shortcut icon" href="num.png" type="image/x-icon"/>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="container">
+       <h1 id="name">Number Block Drop</h1> 
+       <button type="button" id="startBtn" onclick="startGame()">Start game</button>
+       
+    </div>
+    <div id="muter">
+        <span></span><span></span><span></span><span></span><span></span>
+    </div>
+    <h2 id="num"></h2>
+    <h3 id="score"></h3>
+    <div id="aud">
+    <audio  id="gameOn" loop >
+        <source src="gameon.mp3" type="audio/mp3">
+    </audio>
+       <audio  id="correct" >
+        <source src="correct.wav" type="audio/wav">
+    </audio>
+    <audio  id="gameLost" loop >
+        <source src="gameover.mp3" type="audio/mp3">
+    </audio>
+   
+    </div>
+<script src="script.js"> </script>
+</body>
+</html>

@@ -1,0 +1,157 @@
+*{
+    box-sizing:border-box;
+}
+body{
+            position: relative;
+            background:linear-gradient(to right,burlywood,whitesmoke,wheat);
+        }
+        .container{
+            margin: 5vh auto 0;
+            width:90vw; height:500px;
+            max-width: 500px;
+            max-height: 65vh;
+            background:#5ad;
+            position:relative;
+           overflow:hidden;
+           border:0.5vw solid rgba(0,0,0,0.1);
+        }
+        h1{
+            color:#73a;
+            text-align:center;
+            text-shadow:1px 1px #eee, -1px -1px #ddd,-1px 1px #bbb,1px -1px #777;
+            font-size:10vh;
+            width:90%; margin:10% auto;
+        }
+       
+        .container div{
+        position: absolute;
+            width:10%; height:11%;
+            border:2px solid cornsilk;
+            display:flex;
+            justify-content:center;
+            align-items:center;
+            color:cornsilk;
+            font-size:35px;
+            transition:0.2s linear;
+            cursor: pointer;
+            z-index:2;
+        }
+        h2{
+           position: absolute;
+           top:100px; left: 25%;
+           font-size:30vh;
+           text-align:center;
+           width:50%;
+           margin: 0;
+           box-sizing: border-box;
+           background: transparent;
+           opacity:0.5;
+           transition:opacity 2s ease;
+        }
+        .spin{
+  transform: translate(4vw, -20vw) rotate(720deg);
+  transition:12s linear;
+
+        }
+        h3{
+            text-align:center;
+            font-size:30px;
+            color:#73a;
+            width:20vw; height:20vw;
+            max-width: 100px; max-height: 100px;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            box-sizing:border-box;
+            margin: 0 auto;
+            border:0.5vw solid rgba(0,0,0,0.1);
+            border-top:none;
+            text-shadow:1px 1px #eee, -1px -1px #ddd,-1px 1px #bbb,1px -1px #777;
+        }
+       .container button{
+        position: absolute;
+           padding:10px;
+           font-size:25px;
+           background:#73a;
+           border-radius:5px;
+           color:cornsilk;
+           border:2px solid cornsilk;
+           outline:none;
+           cursor:pointer;
+           transition:top 1s ease;
+           max-width:40vw;
+           box-sizing:border-box;
+       }
+       button:active{
+           transform:scale(0.95,0.95);
+       }
+       #startBtn{
+           width: 40%;
+           left: 30%; top: 75%;
+       }
+       audio{
+           display:none;
+       }#score{
+           background:#5ad;
+           color: #73a;
+       }
+       #muter{
+        width: 50px; height: 50px;
+        /* background: red; */
+        position: absolute;
+        top: 10px; left: calc(100% - 70px);
+        cursor: pointer;
+       }
+       #muter span{
+        position: absolute;
+        width: 3px; height: 20px;
+        background: #73a;
+        border-radius: 20px;
+        left: 10px;
+       }
+        #muter:hover span{
+        box-shadow: 1px 1px 1px #ccc;
+       }
+       #muter span:nth-child(1){
+        height: 10px; left: 7px;
+        top: 20px;
+       }
+       #muter span:nth-child(2){
+        transform: rotate(20deg);
+        width: 20px; height: 3px;
+         left: 7px;
+        top: 30px;
+       }
+       #muter span:nth-child(3){
+        transform: rotate(-20deg);
+        width: 20px; height: 3px;
+         left: 7px;
+        top: 16px;
+       }
+       #muter span:nth-child(4){
+         left: 17.5px;
+         width: 17px; height: 17px;
+        top: 16px;
+        border-radius: 100px 0 100px 0;
+        border: 3px solid #73a;
+        transform:rotate(-45deg);
+        background: none;
+       }
+       #muter span:nth-child(5){
+        transform: rotate(-45deg);
+        width: 15px; height: 15px;
+         left: 25px;
+        top: 17px;
+        background: none;
+        border: 3px solid #73a;
+        border-left-color:transparent ;
+        border-top-color:transparent;
+       }
+       #muter.muted span:nth-child(5){
+        transform: rotate(30deg);
+        height: 40px; width: 3px;
+         left: 17px;
+         border: none;
+         background: #73a;
+        top: 4px;
+       }
