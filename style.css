@@ -19,13 +19,13 @@ body{
             color:#73a;
             text-align:center;
             text-shadow:1px 1px #eee, -1px -1px #ddd,-1px 1px #bbb,1px -1px #777;
-            font-size:90px;
+            font-size:10vh;
             width:90%; margin:10% auto;
         }
        
         .container div{
         position: absolute;
-            width:10%; height:11%;
+            width:9vw; height:9vw;
             border:2px solid cornsilk;
             display:flex;
             justify-content:center;
@@ -57,8 +57,8 @@ body{
             text-align:center;
             font-size:30px;
             color:#73a;
-            width:25vw; height:25vw;
-            max-width: 150px; max-height: 150px;
+            width:30vw; height:20vw;
+            max-width: 150px; max-height: 100px;
             display: flex;
             align-items: center;
             justify-content: center;
@@ -97,11 +97,11 @@ body{
        }
        #muter{
         width: 50px; height: 50px;
-        /* background: red; */
         position: absolute;
         top: 10px; left: calc(100% - 70px);
         cursor: pointer;
        }
+       
        #muter span{
         position: absolute;
         width: 3px; height: 20px;
@@ -154,4 +154,40 @@ body{
          border: none;
          background: #73a;
         top: 4px;
+       }
+       #howTo{
+       width:40px; height:40px;
+       left:30px;
+       position: absolute;
+           top:15px;
+           background:#73a;
+           font-size:30px;
+           cursor:pointer;
+           border-radius:50%;
+           display:flex;
+           align-items:center;
+           justify-content:center;
+           color:#fff;
+           box-shadow:1px 1px 5px #bbb;
+       }
+       #exp{
+       display:none;
+           position: absolute;
+           top:40px; left:40px;
+           width:300px; auto;
+           background:#73a;
+           padding:10px;
+           z-index:5;
+       }
+       #exp p{
+           font-size:20px;
+           margin:0;
+       }
+       #howTo:hover #exp{
+           display:block;
+       }
+       #dev{
+           display:block;
+           margin:10px auto;
+           width:fit-content;
        }
